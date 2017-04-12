@@ -26,9 +26,9 @@ object BuildFeatures_FileContentReplacerKotlin_InfoPlistTemplates_PatchInfoPlist
     steps {
         step {
             type = "Xcode"
-            param("project", "SimpleBindingsAdoption.xcworkspace")
-            param("scheme", "MyScheme")
             param("useCustomBuildOutputDir", "true")
+            param("scheme", "MyScheme")
+            param("project", "SimpleBindingsAdoption.xcworkspace")
             param("xcodePath", "/Applications/Xcode_6_0_1.app/Contents/Developer")
         }
     }

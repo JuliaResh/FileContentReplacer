@@ -37,8 +37,8 @@ object BuildFeatures_FileContentReplacerKotlin_UserDefinedReplacer_SimpleReplace
             id = "BUILD_EXT_153"
             fileRules = "**/file.txt"
             pattern = "first"
+            caseSensitivePattern = false
             replacement = "replaced first"
-            param("teamcity.file.content.replacer.pattern.case.sensitive", "false")
         }
         replaceContent {
             id = "BUILD_EXT_155"
