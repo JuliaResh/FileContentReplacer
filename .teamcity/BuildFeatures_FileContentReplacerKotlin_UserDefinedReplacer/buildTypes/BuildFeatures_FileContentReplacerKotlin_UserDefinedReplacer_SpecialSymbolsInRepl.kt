@@ -35,5 +35,17 @@ object BuildFeatures_FileContentReplacerKotlin_UserDefinedReplacer_SpecialSymbol
             pattern = ".*"
             replacement = "%param%"
         }
+        replaceContent {
+            fileRules = """
+                *.*
+                -:aa
+            """.trimIndent()
+            pattern = "aaa"
+            caseSensitivePattern = false
+            regexMode = FileContentReplacer.RegexMode.FIXED_STRINGS
+            replacement = "bbb"
+            encoding = FileContentReplacer.FileEncoding.ASCII
+            customEncodingName = "US-ASCII"
+        }
     }
 })
